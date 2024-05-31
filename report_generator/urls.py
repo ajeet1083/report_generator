@@ -6,6 +6,7 @@ from report_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.upload_file, name='upload_file'),
     path('upload/', views.upload_file, name='upload_file'),
 ]
 
